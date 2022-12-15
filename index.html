@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+  <!-- Swiper JS -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- Reset CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <link rel="stylesheet" href="./css/main.css">
+
+  <script defer src="./js/main.js"></script>
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <div class="inner">
+      <a href="/">
+        <img src="https://via.placeholder.com/150x100/?Main+Logo" alt="Main Logo">
+      </a>
+      <div class="menu-wrapper">
+        <div class="main-menu">
+          <ul>
+            <li class="menu-list"><a href="javascript:void(0)">MG차트</a>
+              <ul class="dropdown">
+                <li><a href="javascript:void(0)">TOP 100</a></li>
+                <li><a href="javascript:void(0)">장르별 차트</a></li>
+                <li><a href="javascript:void(0)">연도별 차트</a></li>
+              </ul>
+            </li>
+            <li class="menu-list"><a href="javascript:void(0)">최신 음악</a>
+              <ul class="dropdown">
+                <li><a href="javascript:void(0)">최신 곡</a></li>
+                <li><a href="javascript:void(0)">최신 앨범</a></li>
+              </ul>
+            </li>
+            <li class="menu-list"><a href="javascript:void(0)">장르 음악</a>
+              <ul class="dropdown">
+                <li><a href="javascript:void(0)">가요</a></li>
+                <li><a href="javascript:void(0)">POP</a></li>
+                <li><a href="javascript:void(0)">OST</a></li>
+                <li><a href="javascript:void(0)">트롯</a></li>
+                <li><a href="javascript:void(0)">EDM</a></li>
+                <li><a href="javascript:void(0)">JAZZ</a></li>
+                <li><a href="javascript:void(0)">CLASSIC</a></li>
+              </ul>
+            </li>
+            <li class="menu-list"><a href="javascript:void(0)">추천</a>
+              <ul class="dropdown">
+                <li><a href="javascript:void(0)">AI 추천</a></li>
+                <li><a href="javascript:void(0)">사용자 인기</a></li>
+                <li><a href="javascript:void(0)">태그</a></li>
+                <li><a href="javascript:void(0)">히스토리</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="sub-menu">
+          <ul>
+            <li><a href="javascript:void(0)">Web Player</a></li>
+            <li><a href="javascript:void(0)">Download App</a></li>
+            <li><a href="javascript:void(0)">Event</a></li>
+            <li><a href="javascript:void(0)">Notice</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- main -->
+  <main style="height: 4000px;">
+    <section class="section-1">
+      <div class="inner">
+        <!-- 검색 -->
+        <div class="search-area">
+          <div class="empty-left"></div>
+          <div class="select-box"><select name="" id="">
+              <option value="">전체 검색</option>
+            </select></div>
+          <div class="empty-right"></div>
+          <div class="search-box">
+            <input type="text">
+            <span class="material-icons">search</span>
+          </div>
+        </div>
+        <!-- 로그인 -->
+        <div class="login-box">
+          <div class="login-wrapper">
+            <h1><img src="https://via.placeholder.com/150x50?text=Logo" alt="logo"></h1>
+            <p>가입하고 다양한 혜택을 받으세요!</p>
+            <ul class="social-wrapper">
+              <li><a href="javascript:void(0)"><img src="https://via.placeholder.com/45x45?text=Kakao" alt="kakao"></a></li>
+              <li><a href="javascript:void(0)"><img src="https://via.placeholder.com/45x45?text=Naver" alt="naver"></a></li>
+              <li><a href="javascript:void(0)"><img src="https://via.placeholder.com/45x45?text=Apple" alt="apple"></a></li>
+              <li><a href="javascript:void(0)"><img src="https://via.placeholder.com/45x45?text=Google" alt="google"></a></li>
+            </ul>
+            <ul class="normal">
+              <li><a href="javascript:void(0)">일반 로그인</a></li>
+              <li><a href="javascript:void(0)">일반 회원가입</a></li>
+            </ul>
+          </div>
+      </div>
+    </section>
+
+    <!-- chart -->
+    <section class="chart">
+      <div class="inner">
+        <h2>MG 차트 TOP 100</h2>
+        <ul class="chart-wrapper">
+          <li class="chart-content">
+            <div class="rank">
+              <span class="number">1</span>
+            </div>
+            <div class="music">
+              <a href="javascript:void(0)"><img src="https://via.placeholder.com/50x50" alt="thumbnail-img" class="thumbnail-img
+                "></a>
+              <div class="chart-title">
+                <a href="javascript:void(0)">사건의 지평선</a>
+              </div>
+              <div class="chart-artist">
+                <a href="javascript:void(0)">윤하 (YOUNHA)</a>
+              </div>
+              <a href="javascript:void(0)" class="more-icons"><span class="material-icons">double_arrow</span></a>
+            </div>
+          </li>
+          <li class="chart-content">
+            <div class="rank">
+              <span class="number">2</span>
+            </div>
+            <div class="music">
+              <a href="javascript:void(0)"><img src="https://via.placeholder.com/50x50" alt="thumbnail-img" class="thumbnail-img
+                "></a>
+              <div class="chart-title">
+                <a href="javascript:void(0)">Hype Boy</a>
+              </div>
+              <div class="chart-artist">
+                <a href="javascript:void(0)">NewJeans</a>
+              </div>
+              <a href="javascript:void(0)" class="more-icons"><span class="material-icons">double_arrow</span></a>
+            </div>
+          </li>
+          <li class="chart-content">
+            <div class="rank">
+              <span class="number">3</span>
+            </div>
+            <div class="music">
+              <a href="javascript:void(0)"><img src="https://via.placeholder.com/50x50" alt="thumbnail-img" class="thumbnail-img
+                "></a>
+              <div class="chart-title">
+                <a href="javascript:void(0)">ANTIFRAGILE</a>
+              </div>
+              <div class="chart-artist">
+                <a href="javascript:void(0)">LE SSERAFIM (르세라핌)</a>
+              </div>
+              <a href="javascript:void(0)" class="more-icons"><span class="material-icons">double_arrow</span></a>
+            </div>
+          </li>
+          <li class="chart-content">
+            <div class="rank">
+              <span class="number">4</span>
+            </div>
+            <div class="music">
+              <a href="javascript:void(0)"><img src="https://via.placeholder.com/50x50" alt="thumbnail-img" class="thumbnail-img
+                "></a>
+              <div class="chart-title">
+                <a href="javascript:void(0)">마이웨이 (MY WAY) (Prod. R.Tee)</a>
+              </div>
+              <div class="chart-artist">
+                <a href="javascript:void(0)">저스디스 (JUSTHIS), R.Tee, 던말릭 (DON MALIK), 허성현 (Huh), KHAN, 맥대디 (Mckdaddy), 로스 (Los)</a>
+              </div>
+              <a href="javascript:void(0)" class="more-icons"><span class="material-icons">double_arrow</span></a>
+            </div>
+          </li>
+          <li class="chart-content">
+            <div class="rank">
+              <span class="number">5</span>
+            </div>
+            <div class="music">
+              <a href="javascript:void(0)"><img src="https://via.placeholder.com/50x50" alt="thumbnail-img" class="thumbnail-img
+                "></a>
+              <div class="chart-title">
+                <a href="javascript:void(0)">사랑은 늘 도망가</a>
+              </div>
+              <div class="chart-artist">
+                <a href="javascript:void(0)">임영웅</a>
+              </div>
+              <a href="javascript:void(0)" class="more-icons"><span class="material-icons">double_arrow</span></a>
+            </div>
+          </li>
+          <li class="chart-content">
+            <div class="rank">
+              <span class="number">6</span>
+            </div>
+            <div class="music">
+              <a href="javascript:void(0)"><img src="https://via.placeholder.com/50x50" alt="thumbnail-img" class="thumbnail-img
+                "></a>
+              <div class="chart-title">
+                <a href="javascript:void(0)">After Like</a>
+              </div>
+              <div class="chart-artist">
+                <a href="javascript:void(0)">IVE (아이브)</a>
+              </div>
+              <a href="javascript:void(0)" class="more-icons"><span class="material-icons">double_arrow</span></a>
+            </div>
+          </li>
+          <li class="chart-content">
+            <div class="rank">
+              <span class="number">7</span>
+            </div>
+            <div class="music">
+              <a href="javascript:void(0)"><img src="https://via.placeholder.com/50x50" alt="thumbnail-img" class="thumbnail-img
+                "></a>
+              <div class="chart-title">
+                <a href="javascript:void(0)">Nxde</a>
+              </div>
+              <div class="chart-artist">
+                <a href="javascript:void(0)">(여자)아이들</a>
+              </div>
+              <a href="javascript:void(0)" class="more-icons"><span class="material-icons">double_arrow</span></a>
+            </div>
+          </li>
+          <li class="chart-content">
+            <div class="rank">
+              <span class="number">8</span>
+            </div>
+            <div class="music">
+              <a href="javascript:void(0)"><img src="https://via.placeholder.com/50x50" alt="thumbnail-img" class="thumbnail-img
+                "></a>
+              <div class="chart-title">
+                <a href="javascript:void(0)">우리들의 블루스</a>
+              </div>
+              <div class="chart-artist">
+                <a href="javascript:void(0)">임영웅</a>
+              </div>
+              <a href="javascript:void(0)" class="more-icons"><span class="material-icons">double_arrow</span></a>
+            </div>
+          </li>
+          <li class="chart-content">
+            <div class="rank">
+              <span class="number">9</span>
+            </div>
+            <div class="music">
+              <a href="javascript:void(0)"><img src="https://via.placeholder.com/50x50" alt="thumbnail-img" class="thumbnail-img
+                "></a>
+              <div class="chart-title">
+                <a href="javascript:void(0)">London Boy</a>
+              </div>
+              <div class="chart-artist">
+                <a href="javascript:void(0)">임영웅</a>
+              </div>
+              <a href="javascript:void(0)" class="more-icons"><span class="material-icons">double_arrow</span></a>
+            </div>
+          </li>
+          <li class="chart-content">
+            <div class="rank">
+              <span class="number">10</span>
+            </div>
+            <div class="music">
+              <a href="javascript:void(0)"><img src="https://via.placeholder.com/50x50" alt="thumbnail-img" class="thumbnail-img
+                "></a>
+              <div class="chart-title">
+                <a href="javascript:void(0)">Dreamers [Music from the FIFA World Cup Qatar 2022 Official Soundtrack] (Feat. FIFA Sound)</a>
+              </div>
+              <div class="chart-artist">
+                <a href="javascript:void(0)">정국, 방탄소년단</a>
+              </div>
+              <a href="javascript:void(0)" class="more-icons"><span class="material-icons">double_arrow</span></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- swipe menu -->
+    <section class="swipe-menu">
+      <div class="inner">
+        <h2>Hot & New</h2>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="album-photo--back"><img src="./images/album_cover_1.png" alt="album_cover_back"></div>
+              <div class="album-photo"><img src="./images/album_cover_1.png" alt="album_cover"></div>
+              <div class="text-area">
+                <h3>ANTIFRAGILE</h3>
+                <h4>ANTIFRAGILE</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="album-photo--back"><img src="./images/album_cover_2.png" alt="album_cover_back"></div>
+              <div class="album-photo"><img src="./images/album_cover_2.png" alt="album_cover"></div>
+              <div class="text-area">
+                <h3>New Jeans</h3>
+                <h4>Hype Boy</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="album-photo--back"><img src="./images/album_cover_3.png" alt="album_cover_back"></div>
+              <div class="album-photo"><img src="./images/album_cover_3.png" alt="album_cover"></div>
+              <div class="text-area">
+                <h3>END THEORY : Final Edition</h3>
+                <h4>사건의 지평선</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="album-photo--back"><img src="./images/album_cover_4.png" alt="album_cover_back"></div>
+              <div class="album-photo"><img src="./images/album_cover_4.png" alt="album_cover"></div>
+              <div class="text-area">
+                <h3>After Like</h3>
+                <h4>After Like</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="album-photo--back"><img src="./images/album_cover_5.png" alt="album_cover_back"></div>
+              <div class="album-photo"><img src="./images/album_cover_5.png" alt="album_cover"></div>
+              <div class="text-area">
+                <h3>I love</h3>
+                <h4>Nxde</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="album-photo--back"><img src="./images/album_cover_6.png" alt="album_cover_back"></div>
+              <div class="album-photo"><img src="./images/album_cover_6.png" alt="album_cover"></div>
+              <div class="text-area">
+                <h3>Rain</h3>
+                <h4>Rain</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="album-photo--back"><img src="./images/album_cover_7.png" alt="album_cover_back"></div>
+              <div class="album-photo"><img src="./images/album_cover_7.png" alt="album_cover"></div>
+              <div class="text-area">
+                <h3>Op.22 Y-WALTZ : in Minor</h3>
+                <h4>Loveable</h4>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+</body>
+</html>
