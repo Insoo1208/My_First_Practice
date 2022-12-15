@@ -412,7 +412,7 @@ header .menu-wrapper .main-menu>ul li:hover ul {
 }
 
 .swipe-menu .swiper {
-  /* 이미지 크기(819px) 슬라이드 3개 && 사이 여백 10px 2개 = 2477px */
+  /* width: calc(350px + (350px * .8) * 2 + 20px * 2); */
   width: calc(350px * 3 + 20px * 2);
   height: 400px;
   /* 2477px 유지를 위해 감소 너비 비율을 0으로 */
@@ -424,21 +424,21 @@ header .menu-wrapper .main-menu>ul li:hover ul {
   font-size: 35px;
 }
 
-.swipe-menu .swiper .swiper-slide {
+.swipe-menu .swiper .swiper-slide .swiper-slide--wrapper {
   width: 350px !important;
   height: 350px;
   position: relative;
 }
 
-.swipe-menu .swiper .swiper-slide .album-photo--back > img{
-  width: 350px;
-  height: 350px;
+.swipe-menu .swiper .swiper-slide .swiper-slide--wrapper .album-photo--back > img{
+  width: 100%;
+  height: 100%;
   opacity: .5;
 }
 
-.swipe-menu .swiper .swiper-wrapper .swiper-slide .album-photo {
-  width: 270px;
-  height: 270px;
+.swipe-menu .swiper .swiper-wrapper .swiper-slide .swiper-slide--wrapper .album-photo {
+  width: 77%;
+  height: 77%;
   position: absolute;
   top: 10px;
   left: 0;
@@ -447,12 +447,12 @@ header .menu-wrapper .main-menu>ul li:hover ul {
   z-index: 1;
 }
 
-.swipe-menu .swiper .swiper-wrapper .swiper-slide .album-photo img{
-  width: 270px;
-  height: 270px;
+.swipe-menu .swiper .swiper-wrapper .swiper-slide .swiper-slide--wrapper .album-photo img{
+  width: 100%;
+  height: 100%;
 }
 
-.swipe-menu .swiper .swiper-wrapper .swiper-slide .text-area {
+.swipe-menu .swiper .swiper-wrapper .swiper-slide .swiper-slide--wrapper .text-area {
   position: absolute;
   left: 0;
   right: 0;
@@ -463,13 +463,13 @@ header .menu-wrapper .main-menu>ul li:hover ul {
   z-index: 1;
 }
 
-.swipe-menu .swiper .swiper-wrapper .swiper-slide .text-area h3 {
+.swipe-menu .swiper .swiper-wrapper .swiper-slide .swiper-slide--wrapper .text-area h3 {
   font-size: 20px;
   font-weight: bold;
   padding: 10px 0 5px;
 }
 
-.swipe-menu .swiper .swiper-wrapper .swiper-slide .text-area h4 {
+.swipe-menu .swiper .swiper-wrapper .swiper-slide .swiper-slide--wrapper .text-area h4 {
   padding-bottom: 5px;
 }
 
@@ -488,3 +488,26 @@ header .menu-wrapper .main-menu>ul li:hover ul {
   font-weight: 900;
 }
 
+.swipe-menu .swiper-slide.swiper-slide-prev,
+.swipe-menu .swiper-slide.swiper-slide-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swipe-menu .swiper-slide.swiper-slide-prev .swiper-slide--wrapper,
+.swipe-menu .swiper-slide.swiper-slide-next .swiper-slide--wrapper {
+  width: calc(350px * .8) !important;
+  height: calc(350px * .8) !important;
+  font-size: 80% !important;
+}
+
+.swipe-menu .swiper-slide.swiper-slide-prev .swiper-slide--wrapper h3,
+.swipe-menu .swiper-slide.swiper-slide-next .swiper-slide--wrapper h3 {
+  padding: 5px 0 1px !important;
+}
+
+.swipe-menu .swiper-slide.swiper-slide-prev .swiper-slide--wrapper h4,
+.swipe-menu .swiper-slide.swiper-slide-next .swiper-slide--wrapper h4 {
+  padding-bottom: 2px !important;
+}

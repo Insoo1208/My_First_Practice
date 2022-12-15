@@ -4,9 +4,9 @@ new Swiper('.swipe-menu .swiper', {
   // Optional parameters
   direction: 'horizontal', // 수평 슬라이드(기본값)
   loop: true, // 반복 재생 여부
-  autoplay: { // 자동 재생 여부
-    delay: 5000 // 5초마다 슬라이드 바뀜
-  },
+  // autoplay: { // 자동 재생 여부
+  //   delay: 5000 // 5초마다 슬라이드 바뀜
+  // },
   slidesPerView: 3, // 한 번에 보여줄 슬라이드 개수
   spaceBetween: 20, // 슬라이드 사이 여백(간격) px
   centeredSlides: true, // 1번 슬라이드가 가운데 보이기
