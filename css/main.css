@@ -404,7 +404,7 @@ header .menu-wrapper .main-menu>ul li:hover ul {
 }
 
 .swipe-menu .inner {
-  width: 80%;
+  width: 100%;
   left: 0;
   right: 0;
   position: absolute;
@@ -417,7 +417,7 @@ header .menu-wrapper .main-menu>ul li:hover ul {
   height: 400px;
   /* 2477px 유지를 위해 감소 너비 비율을 0으로 */
   flex-shrink: 0;
-}
+} 
 
 .swipe-menu h2 {
   margin: 10px 0 15px;
@@ -512,3 +512,4 @@ header .menu-wrapper .main-menu>ul li:hover ul {
 .swipe-menu .swiper-slide.swiper-slide-next .swiper-slide--wrapper h4 {
   padding-bottom: 2px !important;
 } */
+
