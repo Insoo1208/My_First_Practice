@@ -488,6 +488,7 @@ header .menu-wrapper .main-menu>ul li:hover ul {
   font-weight: 900;
 }
 
+/*
 .swipe-menu .swiper-slide.swiper-slide-prev,
 .swipe-menu .swiper-slide.swiper-slide-next {
   display: flex;
@@ -510,4 +511,4 @@ header .menu-wrapper .main-menu>ul li:hover ul {
 .swipe-menu .swiper-slide.swiper-slide-prev .swiper-slide--wrapper h4,
 .swipe-menu .swiper-slide.swiper-slide-next .swiper-slide--wrapper h4 {
   padding-bottom: 2px !important;
-}
+} */
